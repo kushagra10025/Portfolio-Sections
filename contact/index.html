@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Me</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.6/pico.min.css" integrity="sha512-shNO98xEjcnLN2zXfvCsoL6HoFTMkFgvg2h9bQE5V2U//e3cIZRWtJ/u7Wae5Fzcu4+hYYwYhjJSa8Eg0+GhIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		.container {
+			text-align: center;
+		}
+		.socials {
+			text-align: center;
+		}
+		.socials a {
+			padding: 5px;
+		}
+
+		textarea {
+			resize: none;
+		}
+	</style>
+</head>
+<body>
+	<main class="container">
+		<hgroup>
+			<h1>
+				<span>Get in Touch!</span>
+			</h1>
+			<h2>
+				Please feel free to contact me with feedbacks, Job Opportunites or Just to Say Hi!!!
+			</h2>
+		</hgroup>
+		<hr>
+		<div class="socials">
+			<a href="mailto:kushagra.mckv@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+			<a href="https://github.com/kushagra10025"><i class="fa-brands fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/kushagra-959b8018b/"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="https://www.youtube.com/@kushagra.prakash.9"><i class="fa-brands fa-youtube"></i></a>
+			<a href="https://kushagra4218.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+			<a href="https://medium.com/@kushagra.mckv"><i class="fa-brands fa-medium"></i></a>
+			<a href="https://www.instagram.com/kushagra.prakash.9/"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://www.artstation.com/negativeproton"><i class="fa-brands fa-artstation"></i></a>
+		</div>
+		<hr>
+		<div>
+			<span id="response-text-holder" hidden><mark id="response-text">Response Message Here</mark></span>
+			<progress id="progress-bar" indeterminate="true" hidden></progress>
+			<form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+				<input type="hidden" name="access_key" value="f7257a8e-9602-4140-bb5f-78dc9c33a765">
+				<input type="text" name="name" id="name" placeholder="Full Name" required>
+				<input type="email" name="email" id="email" placeholder="E-Mail" required>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+				<!-- <input type="button" class="secondary" value="Clear"> -->
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</main>
+
+	<script>
+
+		document.addEventListener('contextmenu', function(e) {
+			e.preventDefault();
+		});
+
+		const form = document.getElementById("contact-form");
+		const progressBar = document.getElementById("progress-bar");
+		const responeText = document.getElementById("response-text");
+		const responeTextHolder = document.getElementById("response-text-holder");
+
+		form.addEventListener("submit", function(e){
+			const formData = new FormData(form);
+			e.preventDefault();
+			var object = {};
+			formData.forEach((value, key) => {
+				object[key] = value;
+			});
+
+			var json = JSON.stringify(object);
+			progressBar.hidden = false;
+
+			form.reset();
+
+			fetch("https://api.web3forms.com/submit", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+					Accept: "application/json"
+				},
+				body: json
+			}).then(async (response) => {
+				let json = await response.json();
+				progressBar.hidden = true;
+				responeTextHolder.hidden = false;
+				if (response.status == 200) {
+					responeText.innerHTML = json.message;
+				} else {
+					console.log(response);
+					responeText.innerHTML = json.message;
+				}
+			}).catch((error) => {
+				console.log(error);
+				responeText.innerHTML = "Something went wrong!";
+			}).then(function () {
+				form.reset();
+				setTimeout(() => {
+					responeTextHolder.hidden = true;
+				}, 5000);
+			});
+		});
+
+	</script>
+</body>
+</html>
