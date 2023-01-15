@@ -114,12 +114,14 @@
 			<li><a href="" id="acad-btn">Academics</a></li>
 		</ul>
 	</nav>
+
 	<!-- General Section -->
 	<hgroup class="container">
 		<h1 id="main-title">Hi, I am Kushagra.</h1>
 		<p id="main-title-tag">An Aspiring Game Developer and a CSE Student.</p>
+		<a id="resume-btn" href="https://drive.google.com/file/d/1IToyz4c60fKEBC4tZhWs_WrCpjzVEOT2/view" role="button" class="primary outline" target="_blank" rel="noopener noreferrer">Get My Resume</a>
 	</hgroup>
-
+	
 	<!-- About Section -->
 	<section class="container" id="about-section">
 		<h3>Professionally</h3>
@@ -151,11 +153,11 @@
 				My name is a combination of Two Root words from Sanskrit.
 				<br>
 			<ul>
-				<li><a href="https://en.wikipedia.org/wiki/Desmostachya_bipinnata"><i
+				<li><a href="https://en.wikipedia.org/wiki/Desmostachya_bipinnata" target="_blank" rel="noopener noreferrer"><i
 							class="roboto-content">Kusha</i></a> - Sacred Grass Blade in Hinduism. <i
 						class="roboto-content">Shri Krishna</i> specifically recommended this, in <i
 						class="roboto-content">Bhagavad Gita</i>, as part of the ideal seat for meditation.</li>
-				<li><a href="https://www.sanskritdictionary.com/agra/1455/1"><i class="roboto-content">Agra</i></a> -
+				<li><a href="https://www.sanskritdictionary.com/agra/1455/1" target="_blank" rel="noopener noreferrer"><i class="roboto-content">Agra</i></a> -
 					Meaning Tip.</li>
 			</ul>
 			When combined it means, <strong><i class="roboto-content">As sharp as the tip of Kusha blade.</i></strong>
@@ -174,8 +176,8 @@
 		<details>
 			<summary>How was this webpage made?</summary>
 			<p>
-				This webpage is hosted through <a href="https://pages.github.com/">GitHub Pages</a>. <br>
-				Styling was provided by <a href="https://picocss.com/">PicoCSS</a>. <br>
+				This webpage is hosted through <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>. <br>
+				Styling was provided by <a href="https://picocss.com/" target="_blank" rel="noopener noreferrer">PicoCSS</a>. <br>
 				Developed with &#9829; by Self.
 			</p>
 		</details>
@@ -310,6 +312,7 @@
 		const aboutSec = document.getElementById("about-section");
 		const skillsSec = document.getElementById("skills-section");
 		const acadSec = document.getElementById("education-section");
+		const resumeBtn = document.getElementById("resume-btn");
 
 		const aboutBtn = document.getElementById("about-btn");
 		const skillsBtn = document.getElementById("skills-btn");
@@ -318,11 +321,17 @@
 		const mainTitle = document.getElementById("main-title");
 		const titleTag = document.getElementById("main-title-tag");
 
+		// Prevent Right Click
+		document.addEventListener('contextmenu', function(e) {
+			e.preventDefault();
+		});
+
 		aboutBtn.addEventListener('click', (e) => {
 			e.preventDefault();
 			aboutSec.hidden = false;
 			skillsSec.hidden = true;
 			acadSec.hidden = true;
+			resumeBtn.hidden = false;
 
 			mainTitle.innerText = "Hi, I am Kushagra.";
 			titleTag.innerText = "An Aspiring Game Developer and a CSE Student.";
@@ -333,6 +342,7 @@
 			aboutSec.hidden = true;
 			skillsSec.hidden = false;
 			acadSec.hidden = true;
+			resumeBtn.hidden = true;
 
 			mainTitle.innerText = "Skills.";
 			titleTag.innerText = "Because dreams don't work unless you do.";
@@ -343,6 +353,7 @@
 			aboutSec.hidden = true;
 			skillsSec.hidden = true;
 			acadSec.hidden = false;
+			resumeBtn.hidden = true;
 
 			mainTitle.innerText = "Academics.";
 			titleTag.innerText = "A Gift that none can take away.";
