@@ -1,0 +1,187 @@
+[
+	{
+		"name": "AfterMath - Multiplayer FPS",
+		"feature_image": "./images/aftermath.gif",
+		"feature_image_alt": "AfterMath Game",
+		"links": [
+			{
+				"id": "google-drive",
+				"url": "https://drive.google.com/drive/folders/12VbSQk_FIZPrvpXk564r9QQZ7Ba-C6_5?usp=share_link"
+			}
+		],
+		"tags": [
+			"CPP",
+			"Unreal",
+			"AWS"
+		],
+		"description": "E-Sports Capable Multiplayer Game developed in Unreal Engine and hosted through AWS with AAA Multiplayer Features like Server Side Prediction, etc."
+	},
+	{
+		"name": "HackTheConsole - Console Games",
+		"feature_image": "./images/hack_the_console.jpg",
+		"feature_image_alt": "Hack the Console",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/kushagra10025/HacktheConsole"
+			},
+			{
+				"id": "youtube",
+				"url": "https://youtu.be/wanYqkiD0Ow"
+			}
+		],
+		"tags": [
+			"CPP",
+			"C#"
+		],
+		"description": "Games made on the Console / Terminal to get the nostalgic feeling of playing retro games like Metroidvania, Mario and others."
+	},
+	{
+		"name": "NegProt's Engine 2D",
+		"feature_image": "./images/npge_ss.png",
+		"feature_image_alt": "NPGE2D",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/kushagra10025/NPGE2D-Public"
+			}
+		],
+		"tags": [
+			"CPP",
+			"SDL2",
+			"ImGUI",
+			"Spdlog"
+		],
+		"description": "A Custom 2D Engine to make platformer games of 90s Mario Style. With full fledged ECS, Animation System and Level Editor ."
+	},
+	{
+		"name": "Unreal Wordle",
+		"feature_image": "./images/wordle_img.png",
+		"feature_image_alt": "Unreal Wordle",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/kushagra10025/kushs-utils-tool"
+			},
+			{
+				"id": "windows",
+				"url": "https://github.com/kushagra10025/Unreal-Wordle/releases/tag/v1.0.0"
+			}
+		],
+		"tags": [
+			"CPP",
+			"Unreal",
+			"Photoshop"
+		],
+		"description": "Highly optimized implementation of the Wordle Game Pattern Matching Algorithm in Unreal Engine"
+	},
+	{
+		"name": "Hospital Registration Portal",
+		"feature_image": "./images/hhc_logo.png",
+		"feature_image_alt": "HHC Logo Logo",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/kushagra10025/Hospital-Registration-Portal"
+			}
+		],
+		"tags": [
+			"CPP",
+			"QT",
+			"PostgreSQL",
+			"AWS"
+		],
+		"description": "Hospital Registration Portal developed specifically for Hathidah Health Care, an integrated unit of Health Care. Data syncing across large distances and hosted on cloud."
+	},
+	{
+		"name": "Arkham Batman Takedown Combat",
+		"feature_image": "./images/Combat_System.jpg",
+		"feature_image_alt": "Batman Takedown Combat System",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/kushagra10025/Takedown-Combat-System"
+			},
+			{
+				"id": "google-drive",
+				"url": "https://drive.google.com/drive/folders/1k7FxjHmh1oF8uJOpWlO0rffQILbkpyXg?usp=share_link"
+			}
+		],
+		"tags": [
+			"Unreal",
+			"Blueprints"
+		],
+		"description": "Combat System Inspired by Arkham Knight Series' Freeflow Combat."
+	},
+	{
+		"name": "Tower One - Tower Defense",
+		"feature_image": "./images/tower_one.gif",
+		"feature_image_alt": "Tower One",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/kushagra10025/Tower-One"
+			},
+			{
+				"id": "youtube",
+				"url": "https://youtu.be/rWCoaHVQym8"
+			},
+			{
+				"id": "itch.io",
+				"url": "https://kushagra4218.itch.io/tower-one"
+			}
+		],
+		"tags": [
+			"C#",
+			"Unity",
+			"Blender",
+			"Photoshop"
+		],
+		"description": "A Single Player Tower Defence game inspired by Plants vs Zombies by with a twist of there being only one movable tower."
+	},
+	{
+		"name": "Real Time Communication for Specially Abled",
+		"feature_image": "./images/asl_logo.jpg",
+		"feature_image_alt": "ASL Logo",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/kushagra10025/Real-Time-Communication-Specially-Abled"
+			},
+			{
+				"id": "youtube",
+				"url": "https://www.youtube.com/watch?v=X1ZXAFHIKHc"
+			},
+			{
+				"id": "google-drive",
+				"url": "https://github.com/kushagra10025/Real-Time-Communication-Specially-Abled/blob/main/Project-Report-Kushagra-SI-49276-1652763161.pdf"
+			}
+		],
+		"tags": [
+			"Python",
+			"AI/ML",
+			"IBM Cloud",
+			"HTML"
+		],
+		"description": "Assist people with disabilities by the AI/ML and significantly improving their ability to get around and participate in daily activities."
+	},
+	{
+		"name": "Kwiz Game - Quizzing Platform",
+		"feature_image": "./images/kwiz_game.gif",
+		"feature_image_alt": "Kwiz Game",
+		"links": [
+			{
+				"id": "github",
+				"url": "https://github.com/kushagra10025/KwizGame"
+			}
+		],
+		"tags": [
+			"HTML",
+			"CSS",
+			"JS",
+			"PHP",
+			"MySQL"
+		],
+		"description": "Inspired by Quizizz Platform. Easy to Setup, Maintain and Retrieve results architecture. Gamified for smooth experience."
+	}
+]
