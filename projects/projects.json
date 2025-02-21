@@ -1,5 +1,45 @@
 [
 	{
+		"name": "Skull and Bones",
+		"feature_image": "./images/skull_and_bones_logo.jpg",
+		"feature_image_alt": "Skull And Bones Logo",
+		"links": [
+			{
+				"id": "steam",
+				"url": "https://store.steampowered.com/app/2853730/Skull_and_Bones/"
+			},
+			{
+				"id": "chrome",
+				"url": "https://www.ubisoft.com/en-us/game/skull-and-bones"
+			}
+		],
+		"tags": [
+			"Ubisoft Anvil", 
+			"AAA"
+		],
+		"description": "Skull and Bones is a AAA open-world pirate adventure game by Ubisoft, featuring naval combat, exploration, and multiplayer piracy set in the Indian Ocean."
+	},
+	{
+		"name": "Unannounced Project",
+		"feature_image": "./images/secret.png",
+		"feature_image_alt": "Skull And Bones Logo",
+		"links": [
+			{
+				"id": "steam",
+				"url": "https://store.steampowered.com/publisher/ubisoft/"
+			},
+			{
+				"id": "chrome",
+				"url": "https://www.ubisoft.com/"
+			}
+		],
+		"tags": [
+			"AAA",
+			"Unannounced"
+		],
+		"description": "Unannounced Project. Details to be shared post announcement. Meanwhile do try other Ubisoft Games :)"
+	},
+	{
 		"name": "AfterMath - Multiplayer FPS",
 		"feature_image": "./images/aftermath.gif",
 		"feature_image_alt": "AfterMath Game",
